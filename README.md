@@ -1,4 +1,8 @@
-# vue-portefolio
+# Vue-portefolio
+
+🚧 Project in progress 🚧
+
+This project allows me to learn VueJs and when it's finished i will have my own website 😁
 
 ## Project setup
 ```
