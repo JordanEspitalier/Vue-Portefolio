@@ -33,7 +33,7 @@ export default {
       this.activeTransition = true
       // Timeout of 2sec before changing to the Home view
       setTimeout(()=>{
-        this.$store.commit('toggleNav', true)
+
         console.log(this.$store.state.showNav)
         this.$router.push({ name: "Home" });
       }, 2000)

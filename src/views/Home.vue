@@ -2,6 +2,7 @@
 <div id="home">
 
   <img src="avatar.png" alt="avatar">
+  <!-- TODO Faire un composant à part pour la section -->
   <section>
     <h1>Qui suis-je ?</h1>
     <p>Je m'appelle Jordan, et je suis une personne qui à pour mission de contribuer à l’amélioration de la société et de la vie des personnes en leur apportant des solutions numériques leur permettant de gagner du temps au quotidien.</p>
@@ -12,7 +13,11 @@
 </div>
 </template>
 <script>
-export default {};
+export default {
+  mounted(){
+    this.$store.commit('toggleNav', true)
+  }
+};
 </script>
 
 <style scoped>
