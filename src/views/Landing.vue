@@ -21,7 +21,10 @@ export default {
       activeTransition: false,
     };
   },
-  mounted() {},
+  mounted() {
+    // disable navBar on this page
+    this.$store.commit('toggleNav', false)
+  },
   computed: {
   },
   methods: {
@@ -30,6 +33,8 @@ export default {
       this.activeTransition = true
       // Timeout of 2sec before changing to the Home view
       setTimeout(()=>{
+        this.$store.commit('toggleNav', true)
+        console.log(this.$store.state.showNav)
         this.$router.push({ name: "Home" });
       }, 2000)
       
@@ -61,6 +66,7 @@ h1 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 45px;
+  user-select: none;
   color: #da044b;
   letter-spacing: 0.04em;
 }
@@ -69,6 +75,7 @@ p {
   display: block;
   color: white;
   cursor: pointer;
+  user-select: none;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 0.04em;

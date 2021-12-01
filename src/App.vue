@@ -1,8 +1,8 @@
 <template>
   <div id="container">
-    <div id="nav">
-      <!-- <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> -->
+    <div v-if="showNav" id="nav">
+      <router-link to="/home">Home</router-link> |
+      <router-link to="/about">About</router-link>
     </div>
     <router-view />
   </div>
@@ -19,9 +19,19 @@ export default {
     BgParticles,
   },
   data() {
-    return {};
+    return {
+    };
   },
-  mounted() {},
+  mounted() {
+  },
+  computed : {
+    showNav (){
+      return this.$store.state.showNav
+    }
+  },
+  methods : {
+
+  }
 };
 </script>
 <style>
@@ -43,5 +53,9 @@ h1,
 h2,
 h3 {
   font-family: "Oswald", sans-serif;
+}
+#nav a{
+  color: white;
+  text-decoration: none;
 }
 </style>
