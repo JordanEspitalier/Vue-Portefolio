@@ -6,6 +6,7 @@
     <h1>Qui suis-je ?</h1>
     <p>Je m'appelle Jordan, et je suis une personne qui à pour mission de contribuer à l’amélioration de la société et de la vie des personnes en leur apportant des solutions numériques leur permettant de gagner du temps au quotidien.</p>
     <p>Et oui, vous l'aurez sans doute compris, je suis développeur dans le domaine du web.</p>
+    <span class="arrow">&#8594;</span>
   </section>
 
 </div>
@@ -32,6 +33,10 @@ img{
 section{
   color: black;
   width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding-left: 2em;
   padding-right: 2em;
   margin-bottom: 6em;
@@ -43,9 +48,17 @@ content:"";
 border-left:20px solid transparent;
 border-right:20px solid transparent;
 border-top: 20px solid rgba(255, 255, 255, 0.8);
-position: absolute;
+position: relative;
+top : 20px;
+right : 15vw;
 }
+
 p{
   font-size: 18px;
 }
+.arrow{
+  display: block;
+  font-size: 50px;
+}
+
 </style>
