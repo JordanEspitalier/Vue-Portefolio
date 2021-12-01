@@ -47,6 +47,7 @@ body {
   position: relative;
   z-index: 1;
   font-family: "EB Garamond", serif;
+  height: 100vh;
 }
 
 h1,
@@ -54,8 +55,22 @@ h2,
 h3 {
   font-family: "Oswald", sans-serif;
 }
+#nav{
+  height: 12vh;
+  /* background-color: rgba(255, 255, 255, 0.267); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+  color: #da044b;
+  letter-spacing: 0.04em;
+  font-size: 25px;
+  font-weight: bold;
+}
 #nav a{
-  color: white;
+  font-family: "Oswald", sans-serif;
   text-decoration: none;
+  color: #da044b;
+  
 }
 </style>
