@@ -15,7 +15,18 @@
   </section>
     <section v-if="PageIndex === 3">
       <h1>Hard Skills</h1>
-      <p>hard skills</p>
+      <ul>
+          <l1>{html}</l1>
+          <l1>{css}</l1>
+          <l1>{javascript}</l1>
+          <l1>{sql}</l1>
+          <l1>{postgrèsql}</l1>
+          <l1>{node-js}</l1>
+          <l1>{espress}</l1>
+          <l1>{mongodb}</l1>
+          <l1>{sqitch}</l1>
+          <l1>{ejs}</l1>
+      </ul>
       <div class="arrow-container">
         <span class="arrow" @click="DecPageIndex">&#8592;</span>
         <span class="arrow" @click="IncPageIndex">&#8594;</span>
@@ -23,7 +34,18 @@
   </section>
       <section v-if="PageIndex === 4">
       <h1>Soft Skills</h1>
-      <p>Soft skills</p>
+        <ul>
+          <l1>Méthode AGILE</l1>
+          <l1>Communication</l1>
+          <l1>Travail d'équipe</l1>
+          <l1>Autonomie</l1>
+          <l1>Mobile</l1>
+          <l1>Détermination</l1>
+          <l1>Anglais</l1>
+          <l1></l1>
+          <l1></l1>
+          <l1></l1>
+        </ul>
       <div class="arrow-container">
         <span class="arrow" @click="DecPageIndex">&#8592;</span>
         <span class="arrow" @click="IncPageIndex">&#8594;</span>
@@ -31,7 +53,11 @@
   </section>
       <section v-if="PageIndex === 5">
       <h1>Les techs que j'apprend actuellement</h1>
-      <p>learning</p>
+        <ul>
+          <l1>{vue-js}</l1>
+          <l1>{vueX}</l1>
+          <l1>{react}</l1>
+      </ul>
       <div class="arrow-container">
         <span class="arrow" @click="DecPageIndex">&#8592;</span>
         <span class="arrow" @click="IncPageIndex">&#8594;</span>
@@ -39,7 +65,11 @@
   </section>
     <section v-if="PageIndex === 6">
       <h1>Les techs j'aimerais apprendre dans le futur</h1>
-      <p>I want to learn them</p>
+        <ul>
+          <l1>{pyton}</l1>
+          <l1>{c#}</l1>
+          <l1>{react native}</l1>
+      </ul>
       <div class="arrow-container">
         <span class="arrow" @click="DecPageIndex">&#8592;</span>
       </div>
@@ -105,6 +135,16 @@ export default {
     .arrow-container{
         display: flex;
         align-self: center;
+    }
+    ul{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        /* margin-block-start: 0;
+        margin-block-end: 0; */
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0;
     }
 
 </style>
