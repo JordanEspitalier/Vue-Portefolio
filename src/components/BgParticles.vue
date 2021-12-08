@@ -14,15 +14,31 @@ export default {
     return {};
   },
   mounted() {
-    Particles.init({
+    if(this.$store.state.screenWidth < 720){
+
+      Particles.init({
       selector: ".background",
       color: ["#FFFFFF", "#DA0463", "#404B69", "#DBEDF3"],
       maxParticles: 80,
       sizeVariations: 3,
       speed: 0.2,
-      connectParticles: true,
+      connectParticles: false,
       minDistance: 180,
-    });
+      });
+    }
+    else{
+
+      Particles.init({
+        selector: ".background",
+        color: ["#FFFFFF", "#DA0463", "#404B69", "#DBEDF3"],
+        maxParticles: 80,
+        sizeVariations: 3,
+        speed: 0.2,
+        connectParticles: true,
+        minDistance: 180,
+      });
+    }
+
   },
 };
 </script>
