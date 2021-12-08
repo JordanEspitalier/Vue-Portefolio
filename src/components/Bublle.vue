@@ -207,4 +207,54 @@ export default {
     .ejs-logo{
       width : 45px;
     }
+
+    @media (max-width : 780px) {
+
+    section{
+    color: black;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-bottom: 6em;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    }
+    section::after{
+    content:""; 
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    position: relative;
+    top : none;
+    right : none;
+    }
+
+    ul{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        /* border: black 1px solid; */
+        justify-content: center;
+        /* margin-block-start: 0;
+        margin-block-end: 0; */
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0;
+    }
+
+    li{
+      /* border: black 1px solid; */
+      width: 100px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 1em;
+      text-transform: uppercase;
+      font-style: italic;
+    }
+    }
 </style>
