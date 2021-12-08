@@ -16,16 +16,32 @@
     <section v-if="PageIndex === 3">
       <h1>Hard Skills</h1>
       <ul>
-          <l1>{html}</l1>
-          <l1>{css}</l1>
-          <l1>{javascript}</l1>
-          <l1>{sql}</l1>
-          <l1>{postgrèsql}</l1>
-          <l1>{node-js}</l1>
-          <l1>{espress}</l1>
-          <l1>{mongodb}</l1>
-          <l1>{sqitch}</l1>
-          <l1>{ejs}</l1>
+          <li>html
+            <img class="html-logo" src="html.png" alt="html logo">
+          </li>
+
+          <li>css
+          <img class="css-logo" src="css.png" alt="css logo">
+          </li>
+
+          <li>javascript
+          <img class="javascript-logo" src="javascript.png" alt="javascript logo">
+          </li>
+          <li>postgrèsql
+          <img class="psql-logo" src="psql.png" alt="postgrèsql logo">
+          </li>
+          <li>node-js
+          <img class="node-logo" src="node.png" alt="node-js logo">
+          </li>
+          <li>mongodb
+          <img class="mongo-logo" src="mongo.png" alt="mongoDb logo">
+          </li>
+          <li>sqitch
+          <img class="sqitch-logo" src="sqitch.png" alt="sqitch logo">
+          </li>
+          <li>ejs
+          <img class="ejs-logo" src="ejs.png" alt="ejs logo">
+          </li>
       </ul>
       <div class="arrow-container">
         <span class="arrow" @click="DecPageIndex">&#8592;</span>
@@ -35,16 +51,16 @@
       <section v-if="PageIndex === 4">
       <h1>Soft Skills</h1>
         <ul>
-          <l1>Méthode AGILE</l1>
-          <l1>Communication</l1>
-          <l1>Travail d'équipe</l1>
-          <l1>Autonomie</l1>
-          <l1>Mobile</l1>
-          <l1>Détermination</l1>
-          <l1>Anglais</l1>
-          <l1></l1>
-          <l1></l1>
-          <l1></l1>
+          <li>Méthode AGILE</li>
+          <li>Communication</li>
+          <li>Travail d'équipe</li>
+          <li>Autonomie</li>
+          <li>Mobile</li>
+          <li>Détermination</li>
+          <li>Anglais</li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
       <div class="arrow-container">
         <span class="arrow" @click="DecPageIndex">&#8592;</span>
@@ -54,9 +70,9 @@
       <section v-if="PageIndex === 5">
       <h1>Les techs que j'apprend actuellement</h1>
         <ul>
-          <l1>{vue-js}</l1>
-          <l1>{vueX}</l1>
-          <l1>{react}</l1>
+          <li>{vue-js}</li>
+          <li>{vueX}</li>
+          <li>{react}</li>
       </ul>
       <div class="arrow-container">
         <span class="arrow" @click="DecPageIndex">&#8592;</span>
@@ -66,9 +82,9 @@
     <section v-if="PageIndex === 6">
       <h1>Les techs j'aimerais apprendre dans le futur</h1>
         <ul>
-          <l1>{pyton}</l1>
-          <l1>{c#}</l1>
-          <l1>{react native}</l1>
+          <li>{pyton}</li>
+          <li>{c#}</li>
+          <li>{react native}</li>
       </ul>
       <div class="arrow-container">
         <span class="arrow" @click="DecPageIndex">&#8592;</span>
@@ -139,7 +155,9 @@ export default {
     ul{
         display: flex;
         justify-content: flex-start;
-        flex-direction: column;
+        flex-wrap: wrap;
+        /* border: black 1px solid; */
+        justify-content: center;
         /* margin-block-start: 0;
         margin-block-end: 0; */
         margin-inline-start: 0px;
@@ -147,4 +165,46 @@ export default {
         padding-inline-start: 0;
     }
 
+    li{
+      /* border: black 1px solid; */
+      width: 150px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 1em;
+      text-transform: uppercase;
+      font-style: italic;
+    }
+    img{
+      display: block;
+      align-self: center;
+      margin-top : 1em;
+    }
+    .html-logo{
+      width : 50px;
+    }
+    .css-logo{
+      width : 50px;
+    }
+    .javascript-logo{
+      width : 45px;
+    }
+    .psql-logo{
+      width : 45px;
+    }
+    .node-logo{
+      width : 50px;
+      padding-top : 5px;
+    }
+    .mongo-logo{
+      width : 60px;
+      padding-top : 5px;
+    }
+    .sqitch-logo{
+      width : 50px;
+      padding-top : 10px;
+    }
+    .ejs-logo{
+      width : 45px;
+    }
 </style>
