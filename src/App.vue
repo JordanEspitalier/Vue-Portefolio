@@ -23,6 +23,9 @@ export default {
     };
   },
   mounted() {
+      window.onresize = () => {
+      this.$store.commit('changeScreenWidth', window.innerWidth)
+    }
   },
   computed : {
     showNav (){

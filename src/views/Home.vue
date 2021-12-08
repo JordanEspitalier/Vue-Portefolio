@@ -1,7 +1,7 @@
 <template>
   <div id="home">
 
-    <img v-if="screenWidth > 780" src="avatar.png" alt="avatar">
+    <img v-if="getScreenWidth > 780" src="avatar.png" alt="avatar">
     <Bublle />
 
   </div>
@@ -15,22 +15,18 @@ export default {
     },
     data(){
       return{
-        screenWidth : window.innerWidth
       }
     },
   mounted(){
     this.$store.commit('toggleNav', true)
-
-    window.onresize = () => {
-      this.screenWidth = window.innerWidth
-    }
-    
   },
   methods:{
 
   },
   computed : {
-
+    getScreenWidth (){
+      return this.$store.state.screenWidth
+    }
   },
 };
 </script>
