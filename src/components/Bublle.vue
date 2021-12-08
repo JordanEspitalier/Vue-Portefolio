@@ -211,17 +211,11 @@ export default {
     @media (max-width : 780px) {
 
     section{
-    color: black;
-    width: 40vw;
+   
+    width: 60vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-left: 2em;
-    padding-right: 2em;
-    margin-bottom: 6em;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    top: 50px;
     }
     section::after{
     content:""; 
@@ -233,28 +227,49 @@ export default {
     right : none;
     }
 
-    ul{
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        /* border: black 1px solid; */
-        justify-content: center;
-        /* margin-block-start: 0;
-        margin-block-end: 0; */
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        padding-inline-start: 0;
-    }
 
     li{
       /* border: black 1px solid; */
       width: 100px;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      margin-bottom: 1em;
-      text-transform: uppercase;
-      font-style: italic;
     }
+    }
+
+    @media (max-width : 480px) {
+      section{
+        width: 70vw;
+        position: relative;
+        top : 55px;
+      }
+          li{
+      /* border: black 1px solid; */
+      width: 100px;
+      }
+        .html-logo{
+        width : 30px;
+      }
+      .css-logo{
+        width : 30px;
+      }
+      .javascript-logo{
+        width : 28px;
+      }
+      .psql-logo{
+        width : 28px;
+      }
+      .node-logo{
+        width : 30px;
+        padding-top : 3px;
+      }
+      .mongo-logo{
+        width : 35px;
+        padding-top : 3px;
+      }
+      .sqitch-logo{
+        width : 30px;
+        padding-top : 4px;
+      }
+      .ejs-logo{
+        width : 28px;
+      }
     }
 </style>

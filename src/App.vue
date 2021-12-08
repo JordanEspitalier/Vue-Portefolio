@@ -73,4 +73,10 @@ h3 {
   color: #da044b;
   
 }
+
+@media (max-width : 480px) {
+  #nav{
+    gap: 1em;
+  }
+}
 </style>
