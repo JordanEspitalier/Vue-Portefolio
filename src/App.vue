@@ -54,6 +54,11 @@ body {
   height: 100vh;
 }
 
+/* *{
+    margin-block-start: 0;
+    margin-block-end: 0;
+} */
+
 h1,
 h2,
 h3 {

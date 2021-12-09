@@ -3,7 +3,7 @@
         <div v-if="showCards" class="card">
             <img src="lets-be-friend.png" alt="lets-be-friends">
             <h1>Let's be friends</h1>
-            <p>Petite description du projet</p>
+            <p>LBF est une plateforme sociale de création d'évènements et de rencontre à travers l'apprentissage et la pratique de langues étrangères.</p>
             <a v-on:click="showModaleLBF" class="a-btn" href="#">DETAILS</a>
         </div>
         <div v-if="showCards" class="card">
@@ -22,13 +22,13 @@
             <section>
                 <h1>Contexte</h1>
                 <p>Let's be friend est un projet dans le lequel j'ai contribué en tant que lead dev back au cours de la formation O'clock "Developpeur Web javascript full stack".
-                LBF est une plateforme sociale de création d'évènements et de rencontre à travers l'apprentissage et la pratique de langues étrangères, cette plateforme permet de :
+                LBF est une plateforme sociale de création d'évènements et de rencontre à travers l'apprentissage et la pratique de langues étrangères, cette plateforme permet de :</p>
                 <ul>
                     <li>Discuter avec des gens parlant une langue étrangère</li>
                     <li>Apprendre en passant de bon moments dans des cadres sociaux positifs (thèmes variés tel que... )</li>
                     <li>Encourager le partage des cultures et des rencontres</li>
                 </ul>
-                </p>
+                
                 <h1>Stacks</h1>
                 <ul>
                     <li>NodeJS</li>
@@ -113,12 +113,14 @@ export default {
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     width: 400px;
     height: 500px;
     border-radius: 10px;
     background-color: rgba(37, 36, 43, 0.9);
     border: #da044b 1px solid;
     animation: 3s ease-in infinite neonEffect;
+    position: relative;
 }
 .card img{
     width: 100%;
@@ -129,11 +131,12 @@ export default {
     display: flex;
     align-items: center;
     width: 80vw;
-    height: 100%;
+    height: 75%;
     border-radius: 10px;
     background-color: rgba(37, 36, 43, 0.9);
     border: #da044b 1px solid;
     animation: 3s ease-in infinite neonEffect;
+    position: relative;
 }
 .modale div {
     width: 50%;
@@ -147,17 +150,18 @@ export default {
 
 .modale div img{
     width: 100%;
-    height: 60%;
+    height: 75%;
     border-radius: 10px;
 }
 .modale section {
     width: 50%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content : flex-start;
     align-items: center;
     flex-direction: column;
     padding-left: 1em;
+    
 }
 .modale section ul {
     align-self: flex-start;
@@ -169,14 +173,15 @@ export default {
     border: white 2px solid;
     border-radius: 10px;
     padding: 5px 10px 5px 10px;
-    margin-top: 2em;
     font-weight: bold;
     transition: 0.3s;
+    position: absolute;
+    bottom: 5%;
 }
 .a-btn-modale{
     position: absolute;
     left: 48.2%;
-    bottom: 12%;
+    bottom: 4%;
 }
 .a-btn:hover{
     color: white;
