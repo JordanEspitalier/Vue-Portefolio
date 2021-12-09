@@ -78,6 +78,9 @@ h3 {
 }
 
 @media (max-width : 480px) {
+  body{
+    overflow: hidden;
+  }
   #nav{
     gap: 1em;
   }

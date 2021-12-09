@@ -214,8 +214,8 @@ export default {
    
     width: 60vw;
     display: flex;
-    position: relative;
-    top: 50px;
+    /* position: relative;
+    top: 50px; */
     }
     section::after{
     content:""; 
@@ -237,8 +237,8 @@ export default {
     @media (max-width : 480px) {
       section{
         width: 70vw;
-        position: relative;
-        top : 55px;
+        /* position: relative;
+        top : 55px; */
       }
           li{
       /* border: black 1px solid; */
