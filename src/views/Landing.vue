@@ -2,8 +2,8 @@
   <div>
     <transition name="fade">
       <section v-bind:class="{effect : activeTransition}">
-        <h1>WELCOME</h1>
-        <p @click="goToHomePage">ENTER</p>
+        <h1>BIENVENUE</h1>
+        <p @click="goToHomePage">ENTRER</p>
       </section>
     </transition>
   </div>

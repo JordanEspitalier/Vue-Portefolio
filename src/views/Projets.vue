@@ -6,6 +6,12 @@
             <p>Petite description du projet</p>
             <a v-on:click="showModaleLBF" class="a-btn" href="#">DETAILS</a>
         </div>
+        <div v-if="showCards" class="card">
+            <img src="porteFolio.png" alt="portefolio">
+            <h1>Mon portefolio</h1>
+            <p>Petite description du projet</p>
+            <a v-on:click="showModalePorteFolio" class="a-btn" href="#">DETAILS</a>
+        </div>
         <div v-if="isModale.letsBeFriends" class="modale">
             <div>
                 <img src="lets-be-friend.png" alt="lets-be-friends">
@@ -32,7 +38,29 @@
                 </ul>
                 
             </section>
-            <a v-on:click="hideModaleLBF" class="a-btn a-btn-modale" href="#">EXIT</a>
+            <a v-on:click="hideModale" class="a-btn a-btn-modale" href="#">EXIT</a>
+        </div>
+        <div v-if="isModale.porteFolio" class="modale">
+            <div>
+                <img src="porteFolio.png" alt="portefolio">
+                <a href="https://github.com/JordanEspitalier/Vue-Portefolio">GITHUB du projet</a>
+                <a href="https://www.jordan-espitalier.com/">Website</a>
+            </div>
+
+            <section>
+                <h1>Contexte</h1>
+                <p>Ayant fini ma formation de developpeur web, j'ai directement eu envie d'avoir un site web afin de pouvoir présenter mes projets, ce site me permet donc d'augmenter ma visibilité sur le web. J'ai voulu faire ce portefolio à l'aide de vue js afin de pouvoir avoir de solides bases sur ce framework.
+                </p>
+                <h1>Stacks</h1>
+                <ul>
+                    <li>NodeJS</li>
+                    <li>VueJS</li>
+                    <li>VueX</li>
+                    <li>Netlify (deploiement)</li>
+                </ul>
+                
+            </section>
+            <a v-on:click="hideModale" class="a-btn a-btn-modale" href="#">EXIT</a>
         </div>
     </div>
 </template>
@@ -44,7 +72,8 @@ export default {
         return{
             showCards : true,
             isModale : {
-                letsBeFriends : false
+                letsBeFriends : false,
+                porteFolio : false
             },
         }
     },
@@ -57,9 +86,14 @@ export default {
             this.showCards = false
             this.isModale.letsBeFriends = true
         },
-        hideModaleLBF(){
+        hideModale(){
             this.showCards = true
             this.isModale.letsBeFriends = false
+            this.isModale.porteFolio = false
+        },
+        showModalePorteFolio(){
+            this.showCards = false
+            this.isModale.porteFolio = true
         },
     },
 }
@@ -72,6 +106,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2em;
 }
 .card{
     display: flex;
@@ -81,6 +116,7 @@ export default {
     height: 500px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.8);
+    border: rgba(255, 255, 255, 0.8) 1px solid;
 }
 .card img{
     width: 100%;
@@ -94,6 +130,7 @@ export default {
     height: 100%;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.8);
+    border: rgba(255, 255, 255, 0.8) 1px solid;
 }
 .modale div {
     width: 50%;
@@ -108,7 +145,7 @@ export default {
 .modale div img{
     width: 100%;
     height: 60%;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px;
 }
 .modale section {
     width: 50%;
