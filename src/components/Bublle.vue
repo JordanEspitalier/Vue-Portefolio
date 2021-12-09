@@ -1,13 +1,13 @@
 <template>
     <section v-if="PageIndex === 1">
         <h1>Qui suis-je ?</h1>
-        <p>Je m'appelle Jordan, et je suis une personne qui a pour mission de contribuer à l’amélioration de la société et de la vie des personnes en leur apportant des solutions numériques leur permettant de gagner du temps au quotidien.</p>
+        <p>Je m'appelle Jordan j'ai 26 ans, et je suis une personne qui a pour mission de contribuer à l’amélioration de la société et de la vie des personnes en leur apportant des solutions numériques leur permettant de gagner du temps au quotidien.</p>
         <p>Et oui, vous l'aurez sans doute compris, je suis développeur dans le domaine du web.</p>
         <span class="arrow" @click="IncPageIndex">&#8594;</span>
   </section>
   <section v-if="PageIndex === 2">
       <h1>Un parcours athypique</h1>
-      <p>bonjour</p>
+      <p>Alors pour les formalitées, j'ai un bacalaureat STI2D ansi qu'un bac+2 (Diplôme des métiers d'arts) en régie de spectacle, en gros un diplôme de régisseur son. <br> Voilà pour les formalitées. <br> Après avoir tenté de travailler dans l'évènementiel sans grand succès j'ai du trouver un job rapidement, j'ai donc travaillé plus de 2 ans dans un casino de jeux, ce fût globalement un bonne expérience, mais le manque de perspectives professionelles et l'absence de stimulation mentale m'a poussé à changer de domaine, et je me suis donc orienté sur le developpement web !</p>
       <div class="arrow-container">
         <span class="arrow" @click="DecPageIndex">&#8592;</span>
         <span class="arrow" @click="IncPageIndex">&#8594;</span>
@@ -79,7 +79,7 @@
     <section v-if="PageIndex === 6">
       <h1>Les techs j'aimerais apprendre dans le futur</h1>
         <ul>
-          <li>{pyton}</li>
+          <li>{python}</li>
           <li>{c#}</li>
           <li>{react native}</li>
       </ul>
