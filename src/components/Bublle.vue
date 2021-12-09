@@ -111,7 +111,7 @@ export default {
 <style scoped>
 
     section{
-    color: black;
+    color: white;
     width: 40vw;
     display: flex;
     justify-content: center;
@@ -121,16 +121,24 @@ export default {
     padding-right: 2em;
     margin-bottom: 6em;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(27, 0, 0, 0.7);
+    border: red 1px solid;
+    /* box-shadow: red 0px 0px 10px; */
+    animation: 4s ease-in infinite neonEffect;
     }
-    section::after{
+    /* section::after{
     content:""; 
     border-left:20px solid transparent;
     border-right:20px solid transparent;
-    border-top: 20px solid rgba(255, 255, 255, 0.8);
+    border-top: 20px solid rgba(0, 0, 0, 0.5);
     position: relative;
     top : 20px;
     right : 15vw;
+    } */
+    @keyframes neonEffect {
+      0% {box-shadow: red 0px 0px 0px;}
+      50%{box-shadow: red 0px 0px 10px;}
+      100%{box-shadow: red 0px 0px 0px;}
     }
 
     p{
