@@ -15,12 +15,24 @@
 
             <section>
                 <h1>Contexte</h1>
-                <p>modale</p>
+                <p>Let's be friend est un projet dans le lequel j'ai contribué en tant que lead dev back au cours de la formation O'clock "Developpeur Web javascript full stack".
+                LBF est une plateforme sociale de création d'évènements et de rencontre à travers l'apprentissage et la pratique de langues étrangères, cette plateforme permet de :
+                <ul>
+                    <li>Discuter avec des gens parlant une langue étrangère</li>
+                    <li>Apprendre en passant de bon moments dans des cadres sociaux positifs (thèmes variés tel que... )</li>
+                    <li>Encourager le partage des cultures et des rencontres</li>
+                </ul>
+                </p>
                 <h1>Stacks</h1>
-                <p>blabla</p>
-                <a v-on:click="hideModaleLBF" class="a-btn" href="#">EXIT</a>
+                <ul>
+                    <li>NodeJS</li>
+                    <li>Postgrèsql</li>
+                    <li>Sqitch</li>
+                    <li>Heroku (deploiement)</li>
+                </ul>
+                
             </section>
-
+            <a v-on:click="hideModaleLBF" class="a-btn a-btn-modale" href="#">EXIT</a>
         </div>
     </div>
 </template>
@@ -90,8 +102,9 @@ export default {
     justify-content: flex-start;
     align-items:center;
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
 }
+
 .modale div img{
     width: 100%;
     height: 60%;
@@ -104,6 +117,11 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-left: 1em;
+}
+.modale section ul {
+    align-self: flex-start;
+    margin-left: -1em;
 }
 .a-btn{
     text-decoration: none;
@@ -114,6 +132,11 @@ export default {
     margin-top: 2em;
     font-weight: bold;
     transition: 0.3s;
+}
+.a-btn-modale{
+    position: absolute;
+    left: 48.2%;
+    bottom: 12%;
 }
 .a-btn:hover{
     color: white;
