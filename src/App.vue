@@ -2,7 +2,8 @@
   <div id="container">
     <div v-if="showNav" id="nav">
       <router-link to="/home">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/projets">Projets</router-link> |
+      <router-link to="/contact">Contact</router-link>
     </div>
     <router-view />
   </div>
@@ -75,6 +76,14 @@ h3 {
   text-decoration: none;
   color: #da044b;
   
+}
+@media (max-width : 780px) {
+  body{
+    overflow: hidden;
+  }
+  #nav{
+    gap: 2em;
+  }
 }
 
 @media (max-width : 480px) {

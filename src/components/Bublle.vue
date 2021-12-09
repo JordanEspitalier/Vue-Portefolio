@@ -1,7 +1,7 @@
 <template>
     <section v-if="PageIndex === 1">
         <h1>Qui suis-je ?</h1>
-        <p>Je m'appelle Jordan, et je suis une personne qui à pour mission de contribuer à l’amélioration de la société et de la vie des personnes en leur apportant des solutions numériques leur permettant de gagner du temps au quotidien.</p>
+        <p>Je m'appelle Jordan, et je suis une personne qui a pour mission de contribuer à l’amélioration de la société et de la vie des personnes en leur apportant des solutions numériques leur permettant de gagner du temps au quotidien.</p>
         <p>Et oui, vous l'aurez sans doute compris, je suis développeur dans le domaine du web.</p>
         <span class="arrow" @click="IncPageIndex">&#8594;</span>
   </section>
@@ -58,9 +58,6 @@
           <li>Mobile</li>
           <li>Détermination</li>
           <li>Anglais</li>
-          <li></li>
-          <li></li>
-          <li></li>
         </ul>
       <div class="arrow-container">
         <span class="arrow" @click="DecPageIndex">&#8592;</span>
@@ -68,7 +65,7 @@
       </div>
   </section>
       <section v-if="PageIndex === 5">
-      <h1>Les techs que j'apprend actuellement</h1>
+      <h1>Les techs que j'apprends actuellement</h1>
         <ul>
           <li>{vue-js}</li>
           <li>{vueX}</li>
