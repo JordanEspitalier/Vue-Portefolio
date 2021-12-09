@@ -107,6 +107,7 @@ export default {
   justify-content: center;
   align-items: center;
   gap: 2em;
+  color: white;
 }
 .card{
     display: flex;
@@ -115,13 +116,14 @@ export default {
     width: 400px;
     height: 500px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: rgba(255, 255, 255, 0.8) 1px solid;
+    background-color: rgba(37, 36, 43, 0.9);
+    border: #da044b 1px solid;
+    animation: 3s ease-in infinite neonEffect;
 }
 .card img{
     width: 100%;
     height: 50%;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px;
 }
 .modale{
     display: flex;
@@ -129,8 +131,9 @@ export default {
     width: 80vw;
     height: 100%;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: rgba(255, 255, 255, 0.8) 1px solid;
+    background-color: rgba(37, 36, 43, 0.9);
+    border: #da044b 1px solid;
+    animation: 3s ease-in infinite neonEffect;
 }
 .modale div {
     width: 50%;
@@ -162,8 +165,8 @@ export default {
 }
 .a-btn{
     text-decoration: none;
-    color: black;
-    border: black 2px solid;
+    color: white;
+    border: white 2px solid;
     border-radius: 10px;
     padding: 5px 10px 5px 10px;
     margin-top: 2em;
@@ -181,4 +184,11 @@ export default {
     background-color:#da044b;
     border: #da044b 2px solid;
 }
+
+@keyframes neonEffect {
+    0% {box-shadow: #da044b 0px 0px 0px;}
+    50%{box-shadow: #da044b 0px 0px 10px;}
+    100%{box-shadow: #da044b 0px 0px 0px;}
+}
+
 </style>

@@ -121,10 +121,11 @@ export default {
     padding-right: 2em;
     margin-bottom: 6em;
     border-radius: 5px;
-    background-color: rgba(27, 0, 0, 0.7);
-    border: red 1px solid;
+    /* background-color: rgba(27, 0, 0, 0.7); */
+    background-color: rgba(37, 36, 43, 0.9);
+    border: #da044b 1px solid;
     /* box-shadow: red 0px 0px 10px; */
-    animation: 4s ease-in infinite neonEffect;
+    animation: 3s ease-in infinite neonEffect;
     }
     /* section::after{
     content:""; 
@@ -136,9 +137,9 @@ export default {
     right : 15vw;
     } */
     @keyframes neonEffect {
-      0% {box-shadow: red 0px 0px 0px;}
-      50%{box-shadow: red 0px 0px 10px;}
-      100%{box-shadow: red 0px 0px 0px;}
+      0% {box-shadow: #da044b 0px 0px 0px;}
+      50%{box-shadow: #da044b 0px 0px 10px;}
+      100%{box-shadow: #da044b 0px 0px 0px;}
     }
 
     p{
