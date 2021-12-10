@@ -115,12 +115,14 @@ export default {
     flex-direction: column;
     text-align: center;
     width: 400px;
-    height: 500px;
     border-radius: 10px;
     background-color: rgba(37, 36, 43, 0.9);
     border: #da044b 1px solid;
     animation: 3s ease-in infinite neonEffect;
     position: relative;
+}
+.card p {
+    margin-bottom: 5em;
 }
 .card img{
     width: 100%;
@@ -195,5 +197,103 @@ export default {
     50%{box-shadow: #da044b 0px 0px 10px;}
     100%{box-shadow: #da044b 0px 0px 0px;}
 }
+
+@media (max-width : 480px) {
+
+    #projets{
+        height: 80vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        gap: 2em;
+        overflow: auto;
+
+    }
+    .card{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+        height: auto;
+        border-radius: 10px;
+        background-color: rgba(37, 36, 43, 0.9);
+        border: #da044b 1px solid;
+        animation: 3s ease-in infinite neonEffect;
+        position: relative;
+
+    
+    }
+    .card img{
+        width: 100%;
+        height: 50%;
+        border-radius: 10px;
+    }
+    .modale{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 80vw;
+        height: 95%;
+        border-radius: 10px;
+        background-color: rgba(37, 36, 43, 0.9);
+        border: #da044b 1px solid;
+        animation: 3s ease-in infinite neonEffect;
+        position: relative;
+        overflow: auto;
+    }
+    .modale div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items:center;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .modale div img{
+        width: 100%;
+        height: 75%;
+        border-radius: 10px;
+    }
+    .modale section {
+        width: 95%;
+        height: 100%;
+        display: flex;
+        justify-content : flex-start;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 8em;
+        
+    }
+    .modale section ul {
+        align-self: flex-start;
+        margin-left: -1em;
+    }
+    .a-btn{
+        text-decoration: none;
+        color: white;
+        border: white 2px solid;
+        border-radius: 10px;
+        padding: 5px 10px 5px 10px;
+        font-weight: bold;
+        transition: 0.3s;
+        position: absolute;
+        bottom: 5%;
+    }
+    .a-btn-modale{
+        display: block;
+        position: static;
+        left: 0;
+        bottom: 0;
+        margin-bottom: 1em;
+    }
+        
+}
+
+
 
 </style>
