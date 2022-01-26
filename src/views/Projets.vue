@@ -15,8 +15,8 @@
         <div v-if="isModale.letsBeFriends" class="modale">
             <div>
                 <img src="lets-be-friend.png" alt="lets-be-friends">
-                <a href="https://github.com/JordanEspitalier/Let-s-be-friend">GITHUB du projet</a>
-                <a href="https://letsbefriends.netlify.app/">Website</a>
+                <a class="link-modale" href="https://github.com/JordanEspitalier/Let-s-be-friend">GITHUB du projet</a>
+                <a class="link-modale" href="https://letsbefriends.netlify.app/">Website</a>
             </div>
 
             <section>
@@ -43,8 +43,8 @@
         <div v-if="isModale.porteFolio" class="modale">
             <div>
                 <img src="porteFolio.png" alt="portefolio">
-                <a href="https://github.com/JordanEspitalier/Vue-Portefolio">GITHUB du projet</a>
-                <a href="https://www.jordan-espitalier.com/">Website</a>
+                <a class="link-modale" href="https://github.com/JordanEspitalier/Vue-Portefolio">GITHUB du projet</a>
+                <a class="link-modale" href="https://www.jordan-espitalier.com/">Website</a>
             </div>
 
             <section>
@@ -140,6 +140,20 @@ export default {
     border: #da044b 1px solid;
     animation: 3s ease-in infinite neonEffect;
     position: relative;
+}
+
+.link-modale{
+    text-decoration: none;
+    color: white;
+    border: white 2px solid;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+}
+.link-modale:hover{
+    color: white;
+    text-shadow: black 1px 1px;
+    background-color:#da044b;
+    border: #da044b 2px solid;
 }
 .modale div {
     width: 50%;

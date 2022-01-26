@@ -4,6 +4,7 @@
       <section v-bind:class="{effect : activeTransition}">
         <h1>BIENVENUE</h1>
         <p @click="goToHomePage">ENTRER</p>
+        <span>🚧 SITE EN CONSTRUCTION 🚧</span>
       </section>
     </transition>
   </div>
