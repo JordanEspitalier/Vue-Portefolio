@@ -115,6 +115,7 @@ export default {
     flex-direction: column;
     text-align: center;
     width: 400px;
+    height: 500px;
     border-radius: 10px;
     background-color: rgba(37, 36, 43, 0.9);
     border: #da044b 1px solid;
